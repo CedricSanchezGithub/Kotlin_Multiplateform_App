@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformapp
+package com.example.kotlinmultiplatformapp.viewmodels
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
