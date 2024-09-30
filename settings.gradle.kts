@@ -16,7 +16,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Kotlin_Multiplatform_App"
 include(":androidApp")
-include(":iosApp")
 include(":shared:datas")
 include(":shared:domain")
 include(":shared:presentation")

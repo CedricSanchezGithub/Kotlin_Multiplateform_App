@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.jetbrainsCompose)
+
 }
 
 kotlin {
@@ -27,6 +28,8 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
+            implementation(compose.components.resources)
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -35,6 +38,9 @@ kotlin {
             implementation(libs.androidx.runtime.android)
             implementation(libs.lifecycle.viewmodel.android)
             implementation(libs.kotlinx.couroutines.android)
+            implementation(libs.androidx.core.ktx)
+            implementation(libs.lifecycle.viewmodel.android)
+
         }
     }
 }

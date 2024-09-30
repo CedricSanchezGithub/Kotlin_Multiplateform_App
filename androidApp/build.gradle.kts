@@ -37,11 +37,12 @@ android {
 }
 
 dependencies {
-    implementation(libs.compose.ui)
+    implementation(projects.shared.domain)
+    implementation(projects.shared.presentation)
+    implementation(projects.shared.datas)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
-    implementation(projects.shared.datas)
     implementation(project(":shared:presentation"))
     debugImplementation(libs.compose.ui.tooling)
 }

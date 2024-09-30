@@ -6,7 +6,7 @@ import kotlinx.coroutines.SupervisorJob
 
 actual open class Viewmodel {
 
-    val viewModelScope: CoroutineScope = CoroutineScope(
+    actual val viewModelScope: CoroutineScope = CoroutineScope(
         SupervisorJob() + Dispatchers.Main.immediate
     )
 }
