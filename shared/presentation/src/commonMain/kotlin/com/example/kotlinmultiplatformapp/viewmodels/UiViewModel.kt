@@ -11,11 +11,10 @@ class UiViewModel : Viewmodel(){
     private val _viewState = MutableStateFlow<HomePageState>(HomePageState.Loading)
     val viewState: StateFlow<HomePageState> = _viewState.asStateFlow()
 
-    private val _objects = MutableStateFlow(ObjectsUIModel())
+    private val _objects = MutableStateFlow(ObjectsUIModel(country = "pays", movie = "film"))
     val objects : StateFlow<ObjectsUIModel> = _objects.asStateFlow()
 
     init{
-        _viewState.value = HomePageState.Success(ObjectsUIModel())
+        _viewState.value = HomePageState.Success(ObjectsUIModel(_objects.value.id, _objects.value.movie, _objects.value.country))
     }
-
 }
