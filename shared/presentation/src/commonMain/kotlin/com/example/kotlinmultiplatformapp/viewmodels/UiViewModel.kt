@@ -14,4 +14,8 @@ class UiViewModel : Viewmodel(){
     private val _objects = MutableStateFlow(ObjectsUIModel())
     val objects : StateFlow<ObjectsUIModel> = _objects.asStateFlow()
 
+    init{
+        _viewState.value = HomePageState.Success(ObjectsUIModel())
+    }
+
 }
