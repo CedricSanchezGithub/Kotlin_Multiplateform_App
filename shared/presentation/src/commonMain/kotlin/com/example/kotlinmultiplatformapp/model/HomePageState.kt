@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformapp.models
+package com.example.kotlinmultiplatformapp.model
 
 sealed class HomePageState {
 

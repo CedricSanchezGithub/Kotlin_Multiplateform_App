@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformapp.viewmodels
+package com.example.kotlinmultiplatformapp.viewmodel
 
 import kotlinx.coroutines.CoroutineScope
 
