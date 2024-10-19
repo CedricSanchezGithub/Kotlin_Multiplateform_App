@@ -39,8 +39,6 @@ kotlin {
             implementation(libs.lifecycle.viewmodel.android)
             implementation(libs.kotlinx.couroutines.android)
             implementation(libs.androidx.core.ktx)
-            implementation(libs.lifecycle.viewmodel.android)
-
         }
     }
 }
@@ -56,6 +54,3 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 }
-//dependencies {
-//
-//}

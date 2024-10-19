@@ -1,11 +1,11 @@
 package com.example.kotlinmultiplatformapp.ui
 
-import UiViewModel
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import com.example.kotlinmultiplatformapp.model.HomePageState
+import com.example.kotlinmultiplatformapp.viewmodel.UiViewModel
 
 @Composable
 fun HomeScreen( viewModel: UiViewModel) {
