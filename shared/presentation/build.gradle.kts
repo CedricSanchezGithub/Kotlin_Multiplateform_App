@@ -7,12 +7,9 @@ plugins {
 }
 
 kotlin {
-    androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "17"
-            }
-        }
+    kotlin {
+        androidTarget()
+        jvmToolchain(17)
     }
     
     listOf(
@@ -29,7 +26,8 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.components.resources)
-
+            implementation(libs.androidx.navigation.compose)
+            implementation(libs.androidx.runtime)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
