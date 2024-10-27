@@ -2,7 +2,7 @@
 
 🇬🇧 As the multiplatform installer is quite limited at the moment, I've attempted to configure one to be able to start a project quickly. I'm still learning, so any feedback is welcome. There are certainly also some basic implementations missing.
 
-jvmTarget = "17"
+jvmToolchain(17)
 Compose multiplatform
 
 rootProject.name = "Kotlin_Multiplatform_App"
